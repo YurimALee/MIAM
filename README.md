@@ -6,4 +6,4 @@ The details of this model are included in [this paper](http://arxiv.org/abs/2101
 ## Files description
 * main.py:
 * models.py:
-* help.py:
+* helpers.py:

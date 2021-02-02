@@ -32,7 +32,6 @@ parser.add_argument('--lr_ratio', type=float, default=0.2)
 parser.add_argument('--batch_size', type=int, default=64)
 parser.add_argument('--gpu_id', type=int, default=2)
 
-print('dropout zero, relu')
 args = parser.parse_args()
 dataset = args.dataset
 fold_num = args.fold_num

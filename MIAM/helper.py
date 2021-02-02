@@ -173,10 +173,10 @@ def sample_loader(phase, k, data, mask, label, time, batch_size, ZeroImpute):
     recs = []
     times = np.zeros((N, T, D))
     if D ==35:
-        times = np.load(open('/home/yurimlee/Project/EHR_Analytics/MultiMHA/Data/kfold_delta_35_' + str(k) + '_' + phase + '.npz', 'rb'), mmap_mode='r', allow_pickle=True)['delta'] #physionet #/home/yrlee/MultiMHA/Data/kfold_delta_35_
+        times = np.load(open('./Data/kfold_delta_35_' + str(k) + '_' + phase + '.npz', 'rb'), mmap_mode='r', allow_pickle=True)['delta'] #physionet #/home/yrlee/MultiMHA/Data/kfold_delta_35_
     else:
-        times = np.load(open('/home/yrlee/MultiMHA/Data/kfold_delta_mimic_' + str(k) + '_' + phase + '.npz', 'rb'), mmap_mode='r', allow_pickle=True)['delta'] #mimic
-    # # times = np.load(open('./Data/kfold_delta_mimic_' + str(k) + '_' + phase + '.npz', 'rb'), mmap_mode='r', allow_pickle=True)['delta'] #mimic
+        times = np.load(open('./Data/kfold_delta_mimic_' + str(k) + '_' + phase + '.npz', 'rb'), mmap_mode='r', allow_pickle=True)['delta'] #mimic
+    # times = np.load(open('./Data/kfold_delta_mimic_' + str(k) + '_' + phase + '.npz', 'rb'), mmap_mode='r', allow_pickle=True)['delta'] #mimic
 
 
     for i in range(N):

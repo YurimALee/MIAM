@@ -9,5 +9,5 @@ The details of this model are included in [this paper](http://arxiv.org/abs/2101
   * models.py: contains the MIAM
   * helpers.py: helper functions for running models
 ### Extended
-  Includes the extended version for Journal (Under Review atm)
+  Includes the extended version for Journal (Under Review)
   * lrp.py: Layer-wise Relevance Propagation code for analysis
